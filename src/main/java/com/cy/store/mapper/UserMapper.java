@@ -34,13 +34,6 @@ public interface UserMapper {
             @Param("password") String password,
             @Param("modifiedUser") String modifiedUser,
             @Param("modifiedTime") Date modifiedTime);
-    /*
-    Integer updatePasswordByUid(
-            Integer uid,
-            String password,
-            String modifiedUser,
-            Date modifiedTime); */
-
     /**
      * 根据用户id查询用户数据
      * @param uid 用户id

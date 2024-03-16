@@ -3,7 +3,6 @@ package com.cy.store.controller;
 import com.cy.store.entity.Product;
 import com.cy.store.entity.ResponseResult;
 import com.cy.store.service.IProductService;
-import com.cy.store.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

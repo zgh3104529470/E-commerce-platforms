@@ -6,7 +6,6 @@ import com.cy.store.entity.ResponseResult;
 import com.cy.store.entity.User;
 import com.cy.store.service.IOrderService;
 import com.cy.store.service.IUserService;
-import com.cy.store.util.JsonResult;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -30,12 +30,7 @@
             username = #{username}
     </select>
 
-    <!-- 根据uid更新用户的密码：
-	     Integer updatePasswordByUid(
-		    @Param("uid") Integer uid,
-		    @Param("password") String password,
-		    @Param("modifiedUser") String modifiedUser,
-		    @Param("modifiedTime") Date modifiedTime) -->
+    <!-- 根据uid更新用户的密码：-->
     <update id="updatePasswordByUid">
         UPDATE
             t_user
