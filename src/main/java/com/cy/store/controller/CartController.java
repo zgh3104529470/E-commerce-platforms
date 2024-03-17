@@ -27,7 +27,10 @@ public class CartController extends BaseController {
         Integer uid = Integer.valueOf(jwtSubject);
         User user = userService.getByUid(uid);
         String username = user.getUsername();
+        System.out.println(cart.getPrice());
+        System.out.println(cart.getNum());
         // 调用业务对象执行添加到购物车
+        System.out.println(cart.getPid());
         cartService.addToCart(uid, cart.getPid(), cart.getNum(), username);
         // 返回成功
         return new ResponseResult<>(OK,"添加成功");

@@ -32,7 +32,7 @@ public class OrderController extends BaseController {
         return new ResponseResult<>(OK, "下单成功",data);
     }
     @PostMapping("pay")
-    public ResponseResult<Order> create(@RequestBody Order order, HttpServletRequest request) {
+    public ResponseResult<Order> pay(@RequestBody Order order, HttpServletRequest request) {
         // 从HttpServletRequest(token)对象中获取uid
         String jwtSubject = (String) request.getAttribute("jwtSubject");
         Integer uid = Integer.valueOf(jwtSubject);
