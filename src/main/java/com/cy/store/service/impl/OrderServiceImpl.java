@@ -48,13 +48,14 @@ public class OrderServiceImpl implements IOrderService {
         // 查询收货地址数据
         User user = userService.getByUid(uid);
         // 补全数据：收货地址相关项
+        System.out.println(user.getNiname());
         order.setRecvName(user.getNiname());
         order.setRecvPhone(user.getPhone());
         order.setRecvAddress(user.getAddress());
         // 补全数据：totalPrice
         order.setTotalPrice(totalPrice);
         // 补全数据：status
-        order.setStatus(0);
+        order.setStatus(1);
         // 补全数据：下单时间
         order.setOrderTime(now);
         // 补全数据：日志
@@ -96,11 +97,11 @@ public class OrderServiceImpl implements IOrderService {
     }
 
     @Override
-    public Order pay(Order order) {
+    public Order payOut(Order order) {
         // 创建当前时间对象
         Date now = new Date();
         // 修改支付状态：status
-        order.setStatus(1);
+        order.setStatus(0);
         // 补全数据：下单时间
         order.setPayTime(now);
         // 补全数据：日志

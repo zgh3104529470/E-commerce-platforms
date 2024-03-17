@@ -12,5 +12,5 @@ public interface IOrderService {
      * @return 成功创建的订单数据
      */
     Order create( Integer[] cids, Integer uid, String username);
-    Order pay(Order order);
+    Order payOut(Order order);
 }

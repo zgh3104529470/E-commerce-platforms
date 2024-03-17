@@ -170,6 +170,7 @@ public class UserServiceImpl implements IUserService {
         // 将以上查询结果中的username/phone/email/gender封装到新User对象中
         user.setUsername(result.getUsername());
         user.setPhone(result.getPhone());
+        user.setNiname(result.getNiname());
         user.setEmail(result.getEmail());
         user.setGender(result.getGender());
         user.setAddress(result.getAddress());

@@ -8,6 +8,4 @@ mybatis:
 spring.jackson.default-property-inclusion: NON_NULL
 # server.servlet.context-path=/store
 # spring.servlet.multipart.maxFileSize=10MB
-server:
-  port: 3306
 # spring.servlet.multipart.maxRequestSize=10MB

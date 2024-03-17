@@ -10,7 +10,7 @@
             total_price,status, order_time, pay_time, created_user, created_time, modified_user,
             modified_time
         ) VALUES (
-            #{uid}, #{recvName},#{recvAddress}, #{totalPrice}, #{status}, #{orderTime}, #{payTime}, #{createdUser},
+            #{uid}, #{recvName},#{recvPhone},#{recvAddress}, #{totalPrice}, #{status}, #{orderTime}, #{payTime}, #{createdUser},
             #{createdTime}, #{modifiedUser}, #{modifiedTime}
         )
     </insert>
